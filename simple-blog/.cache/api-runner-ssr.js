@@ -1,4 +1,8 @@
-var plugins = []
+var plugins = [{
+      name: 'gatsby-plugin-mdx',
+      plugin: require('/home/said/gatsby/simple-blog/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
+      options: {"plugins":[],"extensions":[".mdx"],"defaultLayouts":{},"gatsbyRemarkPlugins":[],"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"],"root":"/home/said/gatsby/simple-blog"},
+    }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {

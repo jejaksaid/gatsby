@@ -1,5 +1,5 @@
 module.exports = {
-    siteMetaData: {
+    siteMetadata: {
         title: `BlogSaid`,
         author: {
             name: `Said`,
@@ -11,7 +11,7 @@ module.exports = {
             twitter: `msaidramadhan`,
         },
     },
-    plugin: [
+    plugins: [
         {
             resolve: `gatsby-plugin-mdx`,
             option: {
@@ -21,7 +21,7 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             option: {
-                path: `${__dirname}/blog`
+                path: `${__dirname}/blog`,
                 name: `blog`,
             },
         },
