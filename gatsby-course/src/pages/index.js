@@ -21,6 +21,19 @@ export const pageQuery = graphql`
         title
       }
     }
+    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+        nodes {
+          excerpt
+          slug
+          frontmatter {
+            title
+            published
+            description
+            date
+          }
+        }
+      }
+    
   }
 
 `;
