@@ -1,6 +1,8 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
-const Home = () => {
+const Home = ({data}) => {
+    console.log(data.site);
     return (
         <>
             <h1>Halo Dunia!</h1>
@@ -10,3 +12,15 @@ const Home = () => {
 
 
 export default Home;
+
+export const pageQuery = graphql` 
+    {
+        site {
+        siteMetadata {
+        description
+        title
+      }
+    }
+  }
+
+`;
