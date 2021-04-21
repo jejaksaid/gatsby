@@ -20,5 +20,6 @@ module.exports = {
     title: "Said Gatsby",
     description: "web dev portfolio",
     copyright: "This website is copyright 2021 said gatsby",
+    contact: "mail@saidramadhan.com"
   },
 }
